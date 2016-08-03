@@ -1,0 +1,28 @@
+///
+/// Transforms a rem value to pixels
+///
+/// This is useful for media queries, as they don't work reliably using rems.
+///
+@function rem-to-px ($rem) {
+    @return ($rem / 1rem) * 10px;
+}
+
+///
+/// Mixin to include a media query for max-width
+/// Only works when body (or any parent div) has the class "template-responsive"
+/// Every class defined on the body needs to include "&." to import this mixin
+///
+@mixin on-max-width ($max-width) {
+    @media screen and (max-width: #{rem-to-px($max-width)}) {
+        @content;
+    }
+}
+
+///
+/// Mixin to include a media query for max-width
+///
+@mixin on-min-width ($min-width) {
+    @media screen and (min-width: #{rem-to-px($min-width)}) {
+        @content;
+    }
+}

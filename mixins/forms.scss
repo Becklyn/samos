@@ -1,0 +1,9 @@
+///
+/// Selects all text input elements in a form
+///
+@mixin text-inputs {
+    input:not([type="radio"]):not([type="checkbox"]),
+    textarea {
+        @content;
+    }
+}

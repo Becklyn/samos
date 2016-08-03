@@ -1,0 +1,9 @@
+///
+/// Hides all the default styling of buttons across the browsers
+///
+@mixin invisible-button {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+{
+    "name": "samos",
+    "description": "A library of commonly used SCSS mixins and helpers by Becklyn",
+    "version": "1.0.0",
+    "author": {
+        "name": "Becklyn Studios",
+        "email": "hello@becklyn.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Becklyn/samos.git"
+    },
+    "homepage": "https://github.com/Becklyn/samos",
+    "bugs": {
+        "url": "https://github.com/Becklyn/samos/issues"
+    },
+    "license": "BSD-3-Clause",
+    "dependencies": {
+        "normalize.css": "^4.2"
+    }
+}

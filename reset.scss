@@ -1,0 +1,25 @@
+// use normalize.css
+@import "node_modules/normalize.css/normalize";
+
+// add custom definitions
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+// overwrite weird normalize.css defaults here
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}

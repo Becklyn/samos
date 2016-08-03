@@ -1,0 +1,20 @@
+///
+/// Centers the element in a positioned parent
+///
+@mixin center-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+///
+/// Stretches an element to fill at least a complete screen
+///
+@mixin fullscreen () {
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+}
