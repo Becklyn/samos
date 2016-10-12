@@ -17,7 +17,33 @@ html {
     box-sizing: inherit;
 }
 
+
 // overwrite weird normalize.css defaults here
+
+// use modern font stack
+// see https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+html {
+    font-family:
+        // Safari for OS X and iOS (San Francisco)
+        -apple-system,
+        // Chrome for OS X (San Francisco) and Windows (Segoe UI)
+        BlinkMacSystemFont,
+        // Windows
+        "Segoe UI",
+        // Android
+        "Roboto",
+        // Linux distros
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        // Older Android
+        "Droid Sans",
+        // Basic web fallback
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
 fieldset {
     margin: 0;
     border: 0;
