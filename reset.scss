@@ -1,8 +1,14 @@
-// use normalize.css
-@import "node_modules/normalize.css/normalize";
+// This is adapted from normalize.css
+// http://necolas.github.io/normalize.css/
 
-// add custom definitions
+
+// ---------------------------------------------------------------------------------------------------------
+// Document
+// ---------------------------------------------------------------------------------------------------------
+
 html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
 }
 
@@ -18,38 +24,191 @@ html {
 }
 
 
-// overwrite weird normalize.css defaults here
-
-// use modern font stack
-// see https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-html {
-    font-family:
-        // Safari for OS X and iOS (San Francisco)
-        -apple-system,
-        // Chrome for OS X (San Francisco) and Windows (Segoe UI)
-        BlinkMacSystemFont,
-        // Windows
-        "Segoe UI",
-        // Android
-        "Roboto",
-        // Linux distros
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-        // Older Android
-        "Droid Sans",
-        // Basic web fallback
-        "Helvetica Neue", Arial, sans-serif;
+body {
+    font: 16px / 1.2 sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-    margin: 0;
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Grouping content
+// ---------------------------------------------------------------------------------------------------------
+
+main,
+li {
+    display: block;
 }
 
-fieldset {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Text level semantics
+// ---------------------------------------------------------------------------------------------------------
+
+b,
+strong {
+    font-weight: 700;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+code,
+kbd {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Embedded content
+// ---------------------------------------------------------------------------------------------------------
+
+audio,
+video {
+    display: block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+img {
+    border-style: none;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Forms
+// ---------------------------------------------------------------------------------------------------------
+
+button {
+    color: inherit;
     border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
     padding: 0;
 }
 
-figure {
-    margin: 0;
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+:focus {
+    outline: 0;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Interactive
+// ---------------------------------------------------------------------------------------------------------
+
+details,
+menu {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Scripting
+// ---------------------------------------------------------------------------------------------------------
+
+template {
+    display: none;
+}
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Hidden
+// ---------------------------------------------------------------------------------------------------------
+
+[hidden] {
+    display: none;
 }
