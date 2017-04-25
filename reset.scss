@@ -122,7 +122,6 @@ img {
 button {
     color: inherit;
     border: 0;
-    font: inherit;
     -webkit-font-smoothing: inherit;
     letter-spacing: inherit;
     background: none;
@@ -133,6 +132,12 @@ button {
 button,
 input {
     overflow: visible;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
 }
 
 button,
