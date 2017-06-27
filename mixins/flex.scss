@@ -1,0 +1,12 @@
+///
+/// Flex grid with n columns
+/// flex-grid(3) --> 3 columns a 33.3333%
+///
+@mixin flex-grid ($columns) {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        flex-basis: 1/$columns * 100%;
+    }
+}
