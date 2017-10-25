@@ -142,6 +142,11 @@ textarea {
     font: inherit;
 }
 
+input:disabled,
+textarea:disabled {
+    color: inherit;
+}
+
 button,
 select {
     text-transform: none;
