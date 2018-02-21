@@ -10,6 +10,16 @@
 
 
 ///
+/// Centers the children
+///
+@mixin center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+///
 /// Stretches an element to fill at least a complete screen
 ///
 @mixin fullscreen () {
