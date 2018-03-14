@@ -10,6 +10,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
+    // use px here, as IE 11 has SVG rendering issues, when using rem as height with %-based font-size on the html element
     font-size: 10px;
 }
 
