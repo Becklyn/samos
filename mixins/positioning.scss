@@ -40,3 +40,17 @@
     height: 100%;
     width: 100%;
 }
+
+
+///
+/// A flex item with a fixed (optionally specified) width
+///
+@mixin fixed-flex-item ($width: null) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 0;
+
+    @if $width != null {
+        width: $width;
+    }
+}
