@@ -20,3 +20,18 @@
     text-indent: 101%;
     white-space: nowrap;
 }
+
+
+///
+/// Prevents wrapping of text by displaying ellipsis instead.
+///
+/// @example scss - Usage
+///   .element {
+///     @include text-overflow;
+///   }
+///
+@mixin text-overflow () {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
