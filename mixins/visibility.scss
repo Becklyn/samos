@@ -27,10 +27,10 @@
 ///
 /// @example scss - Usage
 ///   .element {
-///     @include text-overflow;
+///     @include text-overflow-ellipsis;
 ///   }
 ///
-@mixin text-overflow () {
+@mixin text-overflow-ellipsis () {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
