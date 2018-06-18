@@ -45,7 +45,7 @@
 ///
 /// A flex item with a fixed (optionally specified) width
 ///
-@mixin fixed-flex-item ($width: null) {
+@mixin fixed-flex-width ($width: null) {
     flex-grow: 0;
     flex-shrink: 0;
     min-width: 0;
@@ -53,4 +53,28 @@
     @if $width != null {
         width: $width;
     }
+}
+
+
+///
+/// A flex item with a fixed (optionally specified) height
+///
+@mixin fixed-flex-height ($height: null) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 0;
+
+    @if $height != null {
+        height: $height;
+    }
+}
+
+
+///
+/// A flex item with a fixed (optionally specified) width
+///
+/// @deprecated
+///
+@mixin fixed-flex-item ($width: null) {
+    @include fixed-flex-width($width);
 }
