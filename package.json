@@ -1,6 +1,6 @@
 {
     "name": "samos",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "description": "A library of commonly used SCSS mixins and helpers by Becklyn",
     "author": {
         "name": "Becklyn Studios",
