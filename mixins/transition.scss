@@ -1,7 +1,9 @@
 ///
 /// Compiles to a transition declaration and will automatically generate the `will-change` property as well.
 ///
-/// For multiple properties, just pass in a space separated list as the first parameter.
+/// For multiple properties, just pass in a space separated list as the first parameter, like this:
+///
+///    @include transition(height width top, .5s);
 ///
 @mixin transition ($properties, $duration: .15s, $easing: ease-in-out, $will-change: true) {
     @if $will-change {
