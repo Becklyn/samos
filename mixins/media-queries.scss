@@ -26,8 +26,6 @@
 
 ///
 /// Mixin to include a media query for max-width
-/// Only works when body (or any parent div) has the class "template-responsive"
-/// Every class defined on the body needs to include "&." to import this mixin
 ///
 @mixin on-max-width ($max-width) {
     @media screen and (max-width: #{normalize-to-px($max-width)}) {
