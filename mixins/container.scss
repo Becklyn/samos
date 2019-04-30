@@ -1,0 +1,15 @@
+///
+/// Centered Container
+///
+/// Centers the element in desktop with the given container max width, but will always keep at least the margin.
+///
+@mixin centered-container ($max-width, $min-margin) {
+    max-width: $max-width;
+    margin-left: $min-margin;
+    margin-right: $min-margin;
+
+    @media screen and (min-width: #{2 * $min-margin + $max-width}) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
