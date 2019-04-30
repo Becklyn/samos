@@ -1,3 +1,5 @@
+@import "media-queries";
+
 ///
 /// Centered Container
 ///
@@ -8,7 +10,7 @@
     margin-left: $min-margin;
     margin-right: $min-margin;
 
-    @media screen and (min-width: #{2 * $min-margin + $max-width}) {
+    @include on-min-width(2 * $min-margin + $max-width) {
         margin-left: auto;
         margin-right: auto;
     }
