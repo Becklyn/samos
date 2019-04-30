@@ -4,16 +4,31 @@
 /// This is useful for media queries, as they don't work reliably using rems.
 ///
 @function rem-to-px ($rem) {
+    @debug "Using `rem-to-px()` is deprecated and will be removed in 2.0. Use `normalize-to-px()` instead.";
     @return ($rem / 1rem) * 10px;
+}
+
+
+///
+/// Normalizes the value to px
+///
+@function normalize-to-px ($value) {
+    @if ("px" == unit($value)) {
+        @return $value;
+    }
+    @elseif ("rem" == unit($value)) {
+        @return ($value / 1rem) * 10px;
+    }
+    @else {
+        @error "Can't automatically convert value with unit '#{unit($value)}'";
+    }
 }
 
 ///
 /// Mixin to include a media query for max-width
-/// Only works when body (or any parent div) has the class "template-responsive"
-/// Every class defined on the body needs to include "&." to import this mixin
 ///
 @mixin on-max-width ($max-width) {
-    @media screen and (max-width: #{rem-to-px($max-width)}) {
+    @media screen and (max-width: #{normalize-to-px($max-width)}) {
         @content;
     }
 }
@@ -22,7 +37,7 @@
 /// Mixin to include a media query for max-width
 ///
 @mixin on-min-width ($min-width) {
-    @media screen and (min-width: #{rem-to-px($min-width)}) {
+    @media screen and (min-width: #{normalize-to-px($min-width)}) {
         @content;
     }
 }
