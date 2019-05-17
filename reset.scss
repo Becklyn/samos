@@ -125,15 +125,17 @@ img {
 // Forms
 // ---------------------------------------------------------------------------------------------------------
 
+// Don't forget to style the focus state as well!
 button {
     color: inherit;
     border: 0;
     border-radius: 0;
     -webkit-font-smoothing: inherit;
     letter-spacing: inherit;
-    background: none;
+    background: none transparent;
     cursor: pointer;
     -webkit-appearance: button;
+    outline: 0;
 }
 
 button,
