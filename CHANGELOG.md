@@ -1,11 +1,19 @@
 2.0 (unreleased)
 ===
 
-*   Removed the mixin: `rem-to-px()`
+*   Removed the mixin: `rem-to-px()`.
+*   Removed the mixin: `invisible-button()`.
 
-1.4 (unreleased)
+1.5
 ===
 
-*   Added new mixin: `centered-container()`
-*   Added the mixin `normalize-to-px()` that replaces `rem-to-px()`
-*   Deprecated the mixin: `rem-to-px()`
+*   Deprecated the mixin `invisible-button()`.
+*   Reset list styling in `reset`.
+
+
+1.4
+===
+
+*   Added new mixin: `centered-container()`.
+*   Added the mixin `normalize-to-px()` that replaces `rem-to-px()`.
+*   Deprecated the mixin: `rem-to-px()`.
