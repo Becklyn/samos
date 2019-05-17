@@ -251,4 +251,5 @@ template {
 svg {
     // By default IE11 renders SVGs with overflow enabled, which can caused weird rendering issues
     overflow: hidden;
+    display: inline-block;
 }
