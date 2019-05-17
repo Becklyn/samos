@@ -1,3 +1,5 @@
+@import "mixins/lists";
+
 // This is adapted from normalize.css
 // http://necolas.github.io/normalize.css/
 
@@ -252,4 +254,16 @@ svg {
     // By default IE11 renders SVGs with overflow enabled, which can caused weird rendering issues
     overflow: hidden;
     display: inline-block;
+}
+
+
+// ---------------------------------------------------------------------------------------------------------
+// Lists
+// ---------------------------------------------------------------------------------------------------------
+
+// disable list styling on lists by default, as the styling should be set
+// explicitly in the `.content` class.
+// Only reset `ul` as `ol` is not used for navigations.
+ul {
+    list-style: none;
 }
