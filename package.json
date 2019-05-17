@@ -4,5 +4,18 @@
     "license": "BSD-3-Clause",
     "author": "Becklyn Studios (https://www.becklyn.com/)",
     "homepage": "https://github.com/Becklyn/samos",
-    "version": "1.4.0"
+    "version": "1.4.0",
+    "scripts": {
+        "test": "npx ava --verbose"
+    },
+    "devDependencies": {
+        "ava": "^1.4.1",
+        "glob": "^7.1.4",
+        "sass": "^1.20.1"
+    },
+    "ava": {
+        "files": [
+            "tests/*"
+        ]
+    }
 }
