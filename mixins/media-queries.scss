@@ -8,7 +8,6 @@
     @return ($rem / 1rem) * 10px;
 }
 
-
 ///
 /// Normalizes the value to px
 ///
@@ -16,7 +15,7 @@
     @if ("px" == unit($value)) {
         @return $value;
     }
-    @elseif ("rem" == unit($value)) {
+    @else if ("rem" == unit($value)) {
         @return ($value / 1rem) * 10px;
     }
     @else {
