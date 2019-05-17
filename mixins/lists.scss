@@ -2,5 +2,6 @@
 /// Provides sensible defaults when using a list as navigation list
 ///
 @mixin navigation-list {
+    @debug "Using `navigation-list()` is deprecated and will be removed in 2.0. Remove the mixin for <ul>s or otherwise it must be inlined.";
     list-style: none;
 }

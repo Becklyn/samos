@@ -3,6 +3,7 @@
 
 *   Removed the mixin: `rem-to-px()`.
 *   Removed the mixin: `invisible-button()`.
+*   Removed the mixin: `navigation-list()`.
 
 1.5
 ===
