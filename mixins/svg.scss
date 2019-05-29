@@ -1,0 +1,15 @@
+///
+/// Colors all elements inside the SVG according to the default classes.
+///
+/// You should only use this mixin to style generic SVGs. Only add the classes you actually need in case of a specific
+/// (and known) SVG.
+///
+@mixin color-svg ($color) {
+    ._f {
+        fill: $color;
+    }
+
+    ._s {
+        stroke: $color;
+    }
+}
