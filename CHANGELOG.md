@@ -5,6 +5,13 @@
 *   Removed the mixin: `invisible-button()`.
 *   Removed the mixin: `navigation-list()`.
 
+
+1.6
+===
+
+*   Added `content()` mixin.
+
+
 1.5
 ===
 
