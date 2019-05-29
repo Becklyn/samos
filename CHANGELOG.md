@@ -10,6 +10,7 @@
 
 *   Deprecated the mixin `invisible-button()`.
 *   Reset list styling in `reset`.
+*   Added `max-width` to reset for `<img>`.
 
 
 1.4
