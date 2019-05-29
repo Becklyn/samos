@@ -11,6 +11,7 @@
 *   Deprecated the mixin `invisible-button()`.
 *   Reset list styling in `reset`.
 *   Added `max-width` to reset for `<img>`.
+*   Added `svg-color()` mixin, that colors the elements of an SVG according to the default classes.
 
 
 1.4
