@@ -9,7 +9,7 @@
         "test": "npx ava --verbose"
     },
     "devDependencies": {
-        "ava": "1.4.1",
+        "ava": "2.0.0",
         "glob": "7.1.4",
         "sass": "1.20.3"
     },
