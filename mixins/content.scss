@@ -1,0 +1,47 @@
+///
+/// Default implementation for a .content class
+///
+@mixin content ($margin) {
+    > * {
+        // set default margin
+        + * {
+            margin-top: $margin;
+        }
+
+        // reset margins for inline elements
+        + a,
+        + abbr,
+        + acronym,
+        + b,
+        + bdo,
+        + big,
+        + br,
+        + cite,
+        + code,
+        + dfn,
+        + em,
+        + i,
+        + img,
+        + kbd,
+        + map,
+        + object,
+        + q,
+        + samp,
+        + small,
+        + span,
+        + strong,
+        + sub,
+        + sup,
+        + tt,
+        + var {
+            margin-top: 0;
+        }
+    }
+
+    // reset margin for default buttons
+    > .button + .button {
+        margin-top: 0;
+    }
+
+    @content;
+}
