@@ -1,4 +1,4 @@
-2.0 (unreleased)
+2.0
 ===
 
 *   Removed the mixin: `rem-to-px()`.
