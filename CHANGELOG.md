@@ -6,7 +6,7 @@
 *   Removed the mixin: `navigation-list()`.
 
 
-1.7 (unreleased)
+1.7
 ===
 
 *   Improved default headline margins in `content` for headlines *inside* the text (and not at the start).
