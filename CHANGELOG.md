@@ -10,6 +10,7 @@
 ===
 
 *   Improved default headline margins in `content` for headlines *inside* the text (and not at the start).
+*   Added mixins `flex-fill-width()`, `flex-fill-height()`.
 
 
 1.6
