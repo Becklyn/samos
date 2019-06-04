@@ -43,6 +43,26 @@
 
 
 ///
+/// Fills the flex item
+///
+@mixin flex-fill-width {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+
+///
+/// Fills the flex item
+///
+@mixin flex-fill-height {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 0;
+}
+
+
+///
 /// A flex item with a fixed (optionally specified) width
 ///
 @mixin fixed-flex-width ($width: null) {
