@@ -1,9 +1,0 @@
-///
-/// Hides all the default styling of buttons across the browsers.
-/// Most of the settings are done in the reset, but this one resets it completely.
-///
-/// @deprecated and superseded by `reset`.
-///
-@mixin invisible-button {
-    @debug "Using `invisible-button()` is deprecated and will be removed in 2.0. It can be removed without replacement, as the definitions have been moved to the reset.";
-}
