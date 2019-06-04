@@ -36,11 +36,33 @@
         + var {
             margin-top: 0;
         }
+
+        // add default larger top margin for headlines inside the text
+        + .h1,
+        + .h2,
+        + .h3,
+        + .h4,
+        + .h5,
+        + .h6 {
+            margin-top: 2 * $margin;
+        }
     }
 
     // reset margin for default buttons
     > .button + .button {
         margin-top: 0;
+    }
+
+    // remove larger top margin for consecutive headlines
+    > .h1,
+    > .h2,
+    > .h3,
+    > .h4,
+    > .h5,
+    > .h6 {
+        + * {
+            margin-top: $margin;
+        }
     }
 
     @content;
