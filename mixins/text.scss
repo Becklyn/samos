@@ -1,0 +1,8 @@
+///
+/// Adds a convenience wrapper for setting the text overflow for an element
+///
+@mixin text-overflow {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

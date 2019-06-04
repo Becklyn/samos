@@ -6,6 +6,12 @@
 *   Removed the mixin: `navigation-list()`.
 
 
+1.8
+===
+
+*   Added `text-overflow()` mixin.
+
+
 1.7
 ===
 
