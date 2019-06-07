@@ -1,3 +1,9 @@
+2.1
+===
+
+*   The list styling of `ol` is reset as well.
+*   The list styling of `ol` and `ul` is set in the `content()` mixin.
+
 2.0
 ===
 
