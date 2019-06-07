@@ -262,9 +262,9 @@ svg {
 // Lists
 // ---------------------------------------------------------------------------------------------------------
 
-// disable list styling on lists by default, as the styling should be set
-// explicitly in the `.content` class.
-// Only reset `ul` as `ol` is not used for navigations.
-ul {
+// Disable list styling on lists by default, as the styling should be set
+// explicitly in the `.content` class (already done in the `content()` mixin.
+ul,
+ol {
     list-style: none;
 }

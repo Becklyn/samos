@@ -65,5 +65,18 @@
         }
     }
 
+    ul,
+    ol {
+        margin-left: $margin;
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
     @content;
 }
