@@ -4,7 +4,7 @@
     "license": "BSD-3-Clause",
     "author": "Becklyn Studios (https://www.becklyn.com/)",
     "homepage": "https://github.com/Becklyn/samos",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "scripts": {
         "test": "npx ava --verbose"
     },
