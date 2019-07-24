@@ -7,7 +7,7 @@
 
 
 1.8.1
-===
+=====
 
 *   The hide-text mixin has now an option to set absolute or relative indention. 
 
