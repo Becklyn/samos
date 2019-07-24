@@ -15,10 +15,28 @@
 ///     white-space: nowrap;
 ///   }
 ///
-@mixin hide-text {
+/// @example scss - Usage
+///   .element {
+///     @include hide-text(true);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     overflow: hidden;
+///     text-indent: 101vw;
+///     white-space: nowrap;
+///   }
+///
+@mixin hide-text ($absolute: false) {
+    $unit: "%";
+
+    @if ($absolute) {
+        $unit: "vw";
+    }
+
     overflow: hidden;
-    text-indent: 101%;
     white-space: nowrap;
+    text-indent: 101#{$unit};
 }
 
 
