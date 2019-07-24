@@ -28,15 +28,9 @@
 ///   }
 ///
 @mixin hide-text ($absolute: false) {
-    $unit: "%";
-
-    @if ($absolute) {
-        $unit: "vw";
-    }
-
     overflow: hidden;
+    text-indent: if($absolute, 101vw, 101%);
     white-space: nowrap;
-    text-indent: 101#{$unit};
 }
 
 
