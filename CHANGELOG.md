@@ -1,9 +1,16 @@
+2.2.0
+=====
+
+*   Added `import-fonts` mixin.
+
+
 2.1.0
 =====
 
 *   The list styling of `ol` is reset as well.
 *   The list styling of `ol` and `ul` is set in the `content()` mixin.
 *   The hide-text mixin has now an option to set absolute or relative indention.
+
 
 2.0.0
 =====
