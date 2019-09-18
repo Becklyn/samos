@@ -43,7 +43,7 @@
 /// Will append the numerical font-weights and font-styles to the path name with dashes.
 ///
 @mixin import-fonts ($path-prefix, $font-family, $font-weights, $font-styles: (normal italic), $types: (woff2 woff)) {
-    @each $font-weight in $font-weights {
+    @each $font-weight-label, $font-weight in $font-weights {
         @each $font-style in $font-styles {
             @font-face {
                 $src : ();
