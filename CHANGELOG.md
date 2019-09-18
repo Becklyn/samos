@@ -1,3 +1,9 @@
+2.2.1
+=====
+
+*   Fixed a bug in the `import-fonts` mixin, where an invalid path was generated.
+
+
 2.2.0
 =====
 
