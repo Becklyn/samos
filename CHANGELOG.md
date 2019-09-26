@@ -1,3 +1,9 @@
+2.3.0
+=====
+
+*   Added `flex-equal-columns`
+
+
 2.2.1
 =====
 
