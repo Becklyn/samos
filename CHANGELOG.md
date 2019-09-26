@@ -1,7 +1,8 @@
 2.3.0
 =====
 
-*   Added `flex-equal-columns`
+*   Added `flex-equal-columns` mixin.
+*   Added `smooth-scroll` mixin.
 
 
 2.2.1
