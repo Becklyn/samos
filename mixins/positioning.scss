@@ -98,3 +98,12 @@
 @mixin fixed-flex-item ($width: null) {
     @include fixed-flex-width($width);
 }
+
+
+///
+/// Creates equal width columns
+///
+@mixin flex-equal-columns {
+    @include flex-fill-width;
+    flex-basis: 0;
+}
