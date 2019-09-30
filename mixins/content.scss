@@ -2,6 +2,28 @@
 /// Default implementation for a .content class
 ///
 @mixin content ($margin) {
+
+    // region Headline bottom spacing
+    // must be at the top, as headline on headline will overwrite this
+    // later on.
+    > .h1,
+    > .h2 {
+        + * {
+            margin-top: $margin;
+        }
+    }
+
+    > .h3,
+    > .h4,
+    > .h5,
+    > .h6 {
+        + * {
+            margin-top: .5 * $margin;
+        }
+    }
+    // endregion
+
+    // region Default block elements
     > * {
         // set default margin
         + * {
@@ -37,34 +59,30 @@
             margin-top: 0;
         }
 
-        // add default larger top margin for headlines inside the text
+        // region Headline Top Spacing
+        // must be below the `.hX + *` declarations at the top,
+        // because it needs to overwrite these
         + .h1,
-        + .h2,
+        + .h2 {
+            margin-top: 2 * $margin;
+        }
+
         + .h3,
         + .h4,
         + .h5,
         + .h6 {
-            margin-top: 2 * $margin;
+            margin-top: $margin;
         }
+        // endregion
     }
+    // endregion
 
     // reset margin for default buttons
     > .button + .button {
         margin-top: 0;
     }
 
-    // remove larger top margin for consecutive headlines
-    > .h1,
-    > .h2,
-    > .h3,
-    > .h4,
-    > .h5,
-    > .h6 {
-        + * {
-            margin-top: $margin;
-        }
-    }
-
+    // region Lists
     ul,
     ol {
         margin-left: $margin;
@@ -77,6 +95,5 @@
     ol {
         list-style: decimal;
     }
-
-    @content;
+    // endregion
 }

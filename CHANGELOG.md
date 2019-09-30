@@ -1,3 +1,10 @@
+2.3.1
+=====
+
+*   Added better implementation of default `.content`
+    *   Light break: it doesn't support `@content` anymore, but it was never used (and did nothing) anyway.
+
+
 2.3.0
 =====
 
