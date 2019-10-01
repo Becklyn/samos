@@ -1,3 +1,9 @@
+2.3.2
+=====
+
+*   Compile to correct CSS list type in `transition` mixin.
+
+
 2.3.1
 =====
 
