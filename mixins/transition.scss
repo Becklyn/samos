@@ -15,6 +15,6 @@
     }
     @else {
         transition: #{$duration} #{$easing};
-        transition-property: $properties;
+        transition-property: join($properties, (), 'comma');
     }
 }
