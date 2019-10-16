@@ -1,0 +1,27 @@
+///
+/// Generic str-replace implementation
+///
+@function str-replace ($string, $replacements) {
+    @each $search, $replace in $replacements {
+        $index: str-index($string, $search);
+        @if $index {
+            @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $replacements);
+        }
+    }
+
+    @return $string;
+}
+
+
+///
+/// URL-encodes the given string
+///
+@function url-encode ($string) {
+    @return str-replace($string, (
+            '<':'%3C',
+            '>': '%3E',
+            '"': '%22',
+            '#': '%23',
+            '&': '%26'
+    ));
+}

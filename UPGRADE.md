@@ -1,3 +1,9 @@
+2.x to 3.0
+==========
+
+*   The mixin `text-overflow` was removed. Use `text-overflow-ellipsis` instead.
+
+
 1.x to 2.0
 ==========
 

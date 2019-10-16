@@ -1,0 +1,10 @@
+///
+/// Generic styling for all interactive states
+///
+@mixin on-interaction {
+    &:active,
+    &:focus,
+    &:hover {
+        @content;
+    }
+}
