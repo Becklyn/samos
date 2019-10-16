@@ -7,6 +7,8 @@
 *   Added `svg-child` mixin.
 *   Added `inline-svg` mixin.
 *   Added (internal) utility functions: `str-replace()`, `url-encode()`.
+*   Added `aspect-ratio()` mixin.
+*   Added `square()` mixin.
 
 2.4.0
 =====
