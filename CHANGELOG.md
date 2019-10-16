@@ -3,6 +3,7 @@
 
 *   Clean up definitions + CS cleanup.
 *   Deprecated `text-overflow`.
+*   Added `on-interaction` mixin.
 
 2.4.0
 =====
