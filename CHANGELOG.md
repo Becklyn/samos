@@ -1,3 +1,9 @@
+2.4.0
+=====
+
+*   Added a new global import: `base`.
+
+
 2.3.2
 =====
 
