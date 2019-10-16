@@ -1,6 +1,7 @@
 2.5.0
 =====
 
+*   Clean up definitions + CS cleanup.
 *   Deprecated `text-overflow`.
 
 2.4.0
