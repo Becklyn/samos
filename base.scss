@@ -1,0 +1,7 @@
+///
+/// Data containers are used for mounting JS-components. The class is set on the script tags, that will be removed
+/// after mounting.
+///
+._data-container {
+    display: none;
+}
