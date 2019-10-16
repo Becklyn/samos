@@ -4,6 +4,9 @@
 *   Clean up definitions + CS cleanup.
 *   Deprecated `text-overflow`.
 *   Added `on-interaction` mixin.
+*   Added `svg-child` mixin.
+*   Added `inline-svg` mixin.
+*   Added (internal) utility functions: `str-replace()`, `url-encode()`.
 
 2.4.0
 =====
