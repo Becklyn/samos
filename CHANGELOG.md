@@ -1,3 +1,8 @@
+2.5.0
+=====
+
+*   Deprecated `text-overflow`.
+
 2.4.0
 =====
 
