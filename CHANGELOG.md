@@ -1,6 +1,7 @@
-2.5.0
+2.4.0
 =====
 
+*   Added a new global import: `base`.
 *   Clean up definitions + CS cleanup.
 *   Deprecated `text-overflow`.
 *   Added `on-interaction` mixin.
@@ -9,11 +10,6 @@
 *   Added (internal) utility functions: `str-replace()`, `url-encode()`.
 *   Added `aspect-ratio()` mixin.
 *   Added `square()` mixin.
-
-2.4.0
-=====
-
-*   Added a new global import: `base`.
 
 
 2.3.2
