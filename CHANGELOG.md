@@ -1,3 +1,9 @@
+2.5.0
+=====
+
+*   Added `responsive-font()` mixin.
+
+
 2.4.0
 =====
 
