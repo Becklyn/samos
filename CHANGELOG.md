@@ -1,13 +1,8 @@
-2.5.1
-=====
-
-*   (bug) Fix `url-encode` + `str-replace` implementations.
-
-
 2.5.0
 =====
 
-*   Added `responsive-font()` mixin.
+*   (feature) Added `responsive-font()` mixin.
+*   (bug) Fix `url-encode` + `str-replace` implementations.
 
 
 2.4.0
