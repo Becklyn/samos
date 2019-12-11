@@ -1,3 +1,9 @@
+2.5.1
+=====
+
+*   (bug) Fix `url-encode` + `str-replace` implementations.
+
+
 2.5.0
 =====
 
