@@ -3,6 +3,7 @@
 
 *   (feature) Added `responsive-font()` mixin.
 *   (bug) Fix `url-encode` + `str-replace` implementations.
+*   (docs) added project readme
 
 
 2.4.0
