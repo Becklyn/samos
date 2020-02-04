@@ -1,3 +1,9 @@
+2.5.1
+=====
+
+*   (improvement) Added `on-max-height()` and `on-min-height()` mixins.
+
+
 2.5.0
 =====
 
