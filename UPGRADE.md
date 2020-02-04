@@ -2,6 +2,8 @@
 ==========
 
 *   The mixin `text-overflow` was removed. Use `text-overflow-ellipsis` instead.
+*   The text-alignment on buttons, inputs and textareas is now inherited. If you need the previous behavior (probably on
+    `<button>` where the text is centered by default) you need to set an explicit text alignment.
 
 
 1.x to 2.0
