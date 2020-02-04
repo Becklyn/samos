@@ -1,3 +1,9 @@
+3.0.0
+=====
+
+*   (bc) Inherit text-align in buttons, inputs and textareas by default.
+
+
 2.5.1
 =====
 
