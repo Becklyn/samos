@@ -1,3 +1,9 @@
+3.0.1
+=====
+
+*   (improvement) Added an optional boolean argument to `on-interaction()` to also include a `.is-active` class.
+
+
 3.0.0
 =====
 
