@@ -1,3 +1,10 @@
+3.1.0
+=====
+
+*   (feature) Added `content-base()` mixin.
+*   (deprecation) Deprecated `content()` mixin.
+
+
 3.0.1
 =====
 

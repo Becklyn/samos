@@ -1,3 +1,9 @@
+3.x to 4.0
+==========
+
+*   The mixin `content()` was removed. Use `content-base()` instead. As some margins
+    have changed, be sure to visually check the layout and maybe overwrite some rules.
+
 2.x to 3.0
 ==========
 
