@@ -13,7 +13,7 @@
 /// Cuts off the container after the given amount of lines.
 ///
 /// Modern browsers will use -webkit-line-clamp and show the corresponding ellipsis.
-/// Legacy browsers that don't support it, will fall back to an alternate solution that restrict the container's height to `$lines * $line-height`em.
+/// Legacy browsers that don't support it, will fall back to an alternate solution that restrict the containers height to `$lines * $line-height`em.
 ///
 @mixin vertical-line-clamp ($lines, $line-height) {
     @if type-of($lines) != "number" {
