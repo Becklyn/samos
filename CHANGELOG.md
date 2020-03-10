@@ -1,3 +1,9 @@
+vNext
+=====
+
+*   (feature) Added `vertical-line-clamp()` mixin.
+
+
 3.1.0
 =====
 
