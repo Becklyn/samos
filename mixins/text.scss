@@ -7,3 +7,34 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
+///
+/// Cuts off the container after the given amount of lines.
+///
+/// Modern browsers will use -webkit-line-clamp and show the corresponding ellipsis.
+/// Legacy browsers that don't support it, will fall back to an alternate solution that restrict the container's height to `$lines * $line-height`em.
+///
+@mixin vertical-line-clamp ($lines, $line-height) {
+    @if type-of($lines) != "number" {
+        @error "The lines parameter must be of type 'number'.";
+    }
+
+    @if type-of($line-height) != "number" {
+        @error "The line-height parameter must be of type 'number'.";
+    }
+
+    height: #{$lines * $line-height}em;
+    line-height: $line-height;
+    overflow: hidden;
+
+    @supports (display: -webkit-box) {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $lines;
+        line-clamp: $lines;
+        // Unset properties, which are used to introduce more hacky way of implementing the same feature for IE
+        height: inherit;
+        line-height: inherit;
+    }
+}
