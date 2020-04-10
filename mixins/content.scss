@@ -98,6 +98,11 @@
         list-style: decimal;
     }
     // endregion
+
+    // clean RTE content
+    p:empty {
+        display: none;
+    }
 }
 
 

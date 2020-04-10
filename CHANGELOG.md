@@ -1,7 +1,8 @@
-vNext
+3.2.0
 =====
 
 *   (feature) Added `vertical-line-clamp()` mixin.
+*   (improvement) Prevent some issues with bad RTE markup.
 
 
 3.1.0
