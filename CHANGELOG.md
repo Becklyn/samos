@@ -3,6 +3,7 @@
 
 *   (improvement) Fix deprecated SCSS division syntax. We're now using Dart's `math.div()` everywhere.
     This change will most likely require you to either run on the latest version of Kaba (or Dart's SCSS).
+*   (internal) Replace TravisCI with GitHub Actions.
 
 
 3.2.0
