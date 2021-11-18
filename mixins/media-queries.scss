@@ -1,3 +1,4 @@
+@use "sass:math";
 ///
 /// Normalizes the value to px
 ///
@@ -6,7 +7,7 @@
         @return $value;
     }
     @else if ("rem" == unit($value)) {
-        @return ($value / 1rem) * 10px;
+        @return math.div($value, 1rem) * 10px;
     }
     @else {
         @error "Can't automatically convert value with unit '#{unit($value)}'";
